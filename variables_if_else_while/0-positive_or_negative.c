@@ -9,7 +9,7 @@ int main(void)
 {
 	int n;
 	srand(time(0));
-	n = rand() % 2001 - 1000; - RAND_MAX / 2;
+	n = rand(); - (RAND_MAX/2);
 	
 	if (n>0)
 	{

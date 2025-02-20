@@ -1,9 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/** 
+Last digit print the last digit of a random number and return a text when that last digit is greater than 5 or less than 6 and not 0
+Always return (0) 
+*/
 int main(void)
 {
 int n;

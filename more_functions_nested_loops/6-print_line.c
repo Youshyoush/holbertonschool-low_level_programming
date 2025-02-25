@@ -2,7 +2,7 @@
 
 /**
  * main - check the code
- *
+ * @n: Defines the length of lines
  */
 
 void print_line(int n)

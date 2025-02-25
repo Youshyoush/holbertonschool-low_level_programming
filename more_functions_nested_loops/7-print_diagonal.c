@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * print_diagonal - check the code
+ * @n: Defines the length of the diagonal
  */
 
 void print_diagonal(int n)

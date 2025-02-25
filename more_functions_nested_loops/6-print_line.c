@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- * @n: Defines the length of lines
+ * print_line - check the code
+ *
  */
 
 void print_line(int n)

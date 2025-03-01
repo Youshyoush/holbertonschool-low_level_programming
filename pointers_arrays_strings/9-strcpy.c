@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * _strcpy - copy a string from src point to to pointer dest with the null termitator
+ * _strcpy - copy a string from src point to to pointer
+ *  dest with the null termitator
  * @dest: destination pointer where the string is pointed to
  * @src: the pointer string to be copied
  *

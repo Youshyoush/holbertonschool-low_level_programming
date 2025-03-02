@@ -1,40 +1,32 @@
 #include "main.h"
 
 /**
- * _atoi - converts a string to an integer
- * @s: pointer to the string to convert
+ * _atoi - Converts a string to an integer
+ * @s: The string to convert
  *
- * Return: the converted integer
+ * Return: The converted integer, or 0 if no valid numbers are found
  */
-
 int _atoi(char *s)
 {
 	int sign = 1;
-	int result = 0;
-	int i = 0;
+	int num = 0;
+	int found_digit = 0;
 
-	while (s[i] == ' ')
+	while (*s)
 	{
-		i++;
-	}
-
-	if (s[i] == '-' || s[i] == '+')
-	{
-		if (s[i] == '-')
+		if (*s == '-')
+			sign *= -1;
+		else if (*s >= '0' && *s <= '9')
 		{
-			sign = -1;
+			num = num * 10 + (*s - '0');
+			found_digit = 1;
 		}
-		i++;
-	}
-	while (s[i] != '\0' && (s[i] < '0' || s[i] > '9'))
-	{
-		i++;
+		else if (found_digit)
+			break;
+
+		s++;
 	}
 
-	while (s[i] >= '0' && s[i] <= '9')
-	{
-		result = result * 10 + (s[i] - '0');
-		i++;
-	}
-	return (result * sign);
+	return (num * sign);
 }
+

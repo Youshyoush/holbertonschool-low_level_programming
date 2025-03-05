@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+void _putchar(char s);
 int prime_helper(int n, int i);
 int sqrt_calc(int n, int i);
 void _putchar(char s);
